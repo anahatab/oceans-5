@@ -1,0 +1,143 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background-color: #f0f0f5;
+}
+
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  color: #4494AC;
+}
+
+/* BODY CONTENT STYLING */
+.wrapper  {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 0;
+}
+
+section {
+  margin: 2%;
+  max-width: 100%
+}
+
+.cushion  {
+  padding: 1em;
+}
+
+footer  {
+  background-color: #213E5F;
+  color: #B1BAC7;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+}
+
+#turtle {
+  float: left;
+  border: 5px solid #ddd;
+  border-radius: 4px;
+  width: 50%;
+}
+
+/* HEADER STYLING */
+.header {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7) 80%), url(images/closeocean_opt.jpg) no-repeat center center fixed;
+  background-size: cover;
+  margin: 0px;
+}
+
+.header h1  {
+  text-align: right;
+  color: #213E5F;
+}
+
+/* STYLING LINKS */
+a:link a:visited {
+  color: #213E5F;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #534E75;
+  text-decoration: none;
+}
+
+a:active {
+  color: #534E75;
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+@media (min-width: 400px)  {
+  body  {
+    font-size: 85%;
+  }
+
+  .header {
+    font-size: 2em;
+    padding: 2em 1em 2em 2em;
+  }
+
+  .wrapper  {
+    display: block;
+  }
+
+  .wrapper section  {
+    display: block;
+    margin: 3em 3em;
+    max-width: 95%;
+  }
+
+  img {
+    margin: 2em;
+  }
+}
+
+@media (min-width: 900px)  {
+  body  {
+    font-size: 100%;
+  }
+
+  .wrapper  {
+    display: flex;
+  }
+
+  .container  {
+    display: block;
+    height: 30%;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  img {
+    margin: auto;
+  }
+
+  .header {
+    padding-right: 10%;
+    width: 100%;
+  }
+
+  h2  {
+    margin-bottom: 1.5em;
+  }
+
+  img {
+    margin: 2em;
+  }
+
+  h1  {
+    padding-left: 60%;
+  }
+
+}

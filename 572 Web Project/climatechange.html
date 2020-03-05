@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" >
+  <title> Ana Batchu | INLS 572 A4 </title>
+  <link href="master.css" rel="stylesheet" />
+  <!-- link to W3.CSS responsive nav stylesheet -->
+  <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />
+  <!-- link to google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <section class="header">
+    <h1> Climate Change </h1>
+  </section>
+
+  <!-- Responsive navigation from: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_navbar_hide -->
+        <div class="w3-bar w3-blue-grey">
+          <a href="index.html" class="w3-bar-item w3-button">Home</a>
+          <a href="biodiversity.html" class="w3-bar-item w3-button w3-hide-small">Biodiversity</a>
+          <a href="climatechange.html" class="w3-bar-item w3-button w3-hide-small">Climate Change</a>
+          <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <nav id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-blue-grey">
+          <a href="index.html" class="w3-bar-item w3-button">Home</a>
+          <a href="biodiversity.html" class="w3-bar-item w3-button">Biodiversity</a>
+          <a href="climatechange.html" class="w3-bar-item w3-button">Climate Change</a>
+        </nav>
+
+<div class="wrapper">
+  <section>
+    <h2> Climate Change </h2>
+      <p> According to the <a href="https://www.epa.gov/climate-indicators/oceans"
+          target="_blank"> EPA </a>, the oceans, which cover about 70% of the Earth,
+          have a two-way relationship with global climate. This is reflective of the
+          interconnectedness of the geosphere and ecosystem at every scale. </p>
+      <p> There is data to prove that the oceans are holding more heat than they did
+          60 years ago. This leads to changes in biodiversity in the ocean ecosystem
+          because some species may not be able to survive the increase in temperature.
+          Increased temperature also means changes to the chemical composition of
+          ocean water as well as melting of ice caps and glaciers, causing a rise in
+          sea level and coastal flooding. </p>
+      <article>
+        <h3> Peep, more info </h3>
+        <a href="https://earthobservatory.nasa.gov/images/35379/flooding-along-the-gulf-coast"
+          target="_blank"> Check out this article about flooding on the Gulf Coast
+          in the southern United States. </a>
+      </article>
+  </section>
+
+  <section>
+    <h2> A Look Into Current Research </h2>
+      <h3> What does this all mean? </h3>
+      <p> What does this all look like? Many of us live pretty far from the oceans
+          and it's hard to conceptualize the actual effects of non-ecofriendly
+          living on the Earth and ultimately our lives and the future. </p>
+      <p> There are many scientists analyzing data, constructing models, and
+          publishing results that answer these questions. Why should we care
+          about the oceans? What can we do differently? </p>
+    <p> Bijma et. al. published a paper in the Marine Pollution Bulletin in 2013
+      that goes into great detail about the future of the geosphere given the
+      current state of climate change and how that is affecting the oceans. </p>
+      <p> Some key points made by the authors include: </p>
+        <ul>
+          <li> ocean acidification </li>
+          <li> freshening </li>
+          <li> stratification </li>
+          <li> deoxygenation, and </li>
+          <li> decline of sensitive species. </li>
+        </ul>
+        <p> The authors conclude that these impacts will result in a variety of
+            negative biological consequences to our oceans. These include change
+            in oxygen output (what we breathe!), increased species invasions and
+            turnover (which could potentially lead to disease), and increased
+            extintions and coral reef mortality. </p>
+            <p> To explore this topic further, <a href="docs/oceans_climatechange.pdf"
+              target="_blank"> check out the full paper here </a> . </p>
+  </section>
+</div>
+
+    <footer>
+      <p> This site was created for INLS 572 - Web Development, taught at the
+          University of North Carolina at Chapel Hill. 2019. </p>
+    </footer>
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("demo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+
+</body>
+
+
+</html>

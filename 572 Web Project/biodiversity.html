@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <title> Ana Batchu | INLS 572 A3 </title>
+  <link href="master.css" rel="stylesheet" />
+  <!-- link to W3.CSS responsive nav stylesheet -->
+  <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />
+  <!-- link to google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div class="container">
+    <section class="header">
+      <h1> Biodiversity</h1>
+    </section>
+    <!-- Responsive navigation from: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_navbar_hide -->
+          <div class="w3-bar w3-blue-grey">
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="biodiversity.html" class="w3-bar-item w3-button w3-hide-small">Biodiversity</a>
+            <a href="climatechange.html" class="w3-bar-item w3-button w3-hide-small">Climate Change</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+          </div>
+
+          <nav id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-blue-grey">
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="biodiversity.html" class="w3-bar-item w3-button">Biodiversity</a>
+            <a href="climatechange.html" class="w3-bar-item w3-button">Climate Change</a>
+          </nav>
+  </div>
+
+  <div class="wrapper">
+    <section class="sec1">
+      <h2> Stars of the Sea </h2>
+        <img id="turtle" src="images/turtle.jpg" alt="turtle" />
+        <p> The <a href="http://www.oceanhealthindex.org/news/Biodiversity_In_The_Deep_Sea"
+            target="_blank"> Ocean Health Index </a> has a great article about some really cool
+            species that are found in the deep sea, the part of the ocean that
+            is distinctly colder than more shallow layers, and is significantly
+            far from what is known as the continental shelf. </p>
+    </section>
+
+    <section class="sec2">
+      <h2> Decline in Biodiversity </h2>
+        <p> According to the <a href="https://ocean-climate.org/?page_id=2133&lang=en"
+            target="_blank"> Ocean & Climate platform </a>, biodiversity in the oceans is
+            declining at an alarming rate. The ocean is a vast "micro-ecosystem", and
+            the health of this biome is highly dependent on the biodiversity that exists
+            within it. </p>
+        <p> Why is the health of the ocean important? Other than keeping the fishies
+            happy, the ocean is very important in regulating the Earth's climate by
+            absorbing a great deal of solar UV radiation that comes into ours
+            atmosphere. Without this function, that radiation remains in the air,
+            heating it up and negatively impacting many of the species that live on
+            land. </p>
+        <p> Therefore, keeping the ocean's biodiversity in tact directly benefits
+            us humans who may be living far from any ocean. Understanding the role
+            that underwater species play in the ecosystem can help push new policies
+            and practices that lead to more eco-friendly living. </p>
+        <p> Check out the Ocean & Climate platform article where you can learn
+            more about this topic by clicking <a href="https://ocean-climate.org/?page_id=2133&lang=en"
+            target="_blank"> here. </a> </p>
+      </section>
+
+  </div>
+    <footer>
+      <p> This site was created for INLS 572 - Web Development, taught at the
+          University of North Carolina at Chapel Hill. 2019. </p>
+    </footer>
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("demo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+
+</body>
+
+
+</html>

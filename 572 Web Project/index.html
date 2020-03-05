@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title> Ana Batchu | INLS 572 A2 </title>
+    <link href="master.css" rel="stylesheet" />
+    <!-- link to W3.CSS responsive nav stylesheet -->
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />
+
+    <!-- link to google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet" />
+
+  </head>
+
+  <body>
+
+  <div class="container">
+
+
+      <section class="header">
+        <h1> OCEANS 5 </h1>
+      </section>
+
+<!-- Responsive navigation from: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_navbar_hide -->
+      <div class="w3-bar w3-blue-grey">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="biodiversity.html" class="w3-bar-item w3-button w3-hide-small">Biodiversity</a>
+        <a href="climatechange.html" class="w3-bar-item w3-button w3-hide-small">Climate Change</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+      </div>
+
+      <nav id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-blue-grey">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="biodiversity.html" class="w3-bar-item w3-button">Biodiversity</a>
+        <a href="climatechange.html" class="w3-bar-item w3-button">Climate Change</a>
+      </nav>
+
+ <div class="wrapper">
+    <article class="cushion">
+      <h2> Welcome </h2>
+      <p> This site is dedicated to introducing the amazing biosphere that is the ocean.
+          There is so much left to discover, but the goal of this site is to
+          display what we know thus far. </p>
+      <p> Most likely, much of what you know about the ocean comes from movies
+          or that one beach vacation you took. Hell, maybe you even took a class
+          on oceans or learned something about marine life in biology class. </p>
+      <p> The special thing about oceans is that, although there is considerable
+          resesarch being done to understand them, they is still so much we do not
+          understand and therefore huge potential left in this field. </p>
+      <p> Go ahead and move around in this site. If you learn something cool or
+          have something else to say, feel free to leave a message in the contact
+          page, which you can find in the menu. </p>
+    </article>
+
+    <article class="cushion">
+      <h2> Other Resources </h2>
+      <p> Check out these awesome websites that talk more about oceans. </p>
+
+      <ul>
+        <li> <a href="https://oceanservice.noaa.gov/facts/howmanyoceans.html"> National
+         Oceanic and Atmospheric Administration - How many oceans are there? </a> </li>
+        <li> <a href="https://www.nationalgeographic.com/environment/habitats/ocean/">
+         National Geographic - Climate 101 | Oceans </a> </li>
+        <li> <a href="https://wwf.panda.org/our_work/oceans/"> WWF Oceans </a> </li>
+      </ul>
+    </article>
+ </div>
+
+</div>
+
+    <footer>
+      <p> This site was created for INLS 572 - Web Development, taught at the
+          University of North Carolina at Chapel Hill. 2019. </p>
+    </footer>
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("demo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+
+</body>
+
+</html>
